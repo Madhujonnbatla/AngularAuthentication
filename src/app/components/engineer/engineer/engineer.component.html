@@ -1,0 +1,113 @@
+<div id="image">
+    <div id="a"><nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                <a class="navbar-brand" routerLink="/home">Contraption</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li ><a routerLink="/home">Tickets</a></li>
+                <li><a routerLink="/planttable">Plants </a></li>
+                <li><a routerLink="/ticket">AddTicket </a></li>
+                <li><a routerLink="/engineer">Engineers </a></li>
+                <li><a routerLink="/machine">Machines </a></li>
+      
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a (click)="Logout()"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+                </ul>
+                </div>
+                </div>
+              </nav>
+            <div class="container"  style="padding: 100px;">
+              <form class="form-horizontal" role="form" align="center" (ngSubmit)="Add()" [formGroup]="Engineer">
+                  <h2 align="center"> Engineer Registration</h2>
+                  <div class="form-group">
+                        <label for="EngineerId" class="col-sm-3 control-label">EngineerId</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="EngineerId" placeholder="EngineerId" class="form-control" autofocus formControlName="EngineerId">
+                        </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="EngineerName" class="col-sm-3 control-label">EngineerName</label>
+                      <div class="col-sm-9">
+                          <input type="text" id="EngineerName" placeholder="EngineerName" class="form-control" autofocus formControlName="EngineerName">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="DOB" class="col-sm-3 control-label">DOB</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="DOB" placeholder="DOB" class="form-control" autofocus formControlName="DOB">
+                    </div>
+                </div>
+                  <div class="form-group">
+                      <label for="Email" class="col-sm-3 control-label">Email</label>
+                      <div class="col-sm-9">
+                          <input type="text" id="Email" placeholder=" Email" class="form-control" autofocus formControlName="Email">
+                      </div>
+                  </div>
+                    
+                      <div class="form-group">
+                        <label for="Mobile" class="col-sm-3 control-label">Mobile</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="Mobile" placeholder=" Mobile" class="form-control" autofocus formControlName="Mobile">
+                        </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="language" class="col-sm-3 control-label">language</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="language" placeholder=" language" class="form-control" autofocus formControlName="language">
+                    </div>
+                </div>
+                 
+                  <div class="form-group">
+                      <label for="Address" class="col-sm-3 control-label">Address*</label>
+                      <div class="col-sm-9">
+                          <input type="text" id="Address" placeholder="Address" class="form-control" formControlName="Address">
+                      </div>
+                  </div>
+                  
+                 
+                  <div class="form-group">
+                      <label for="village" class="col-sm-3 control-label">village  </label>
+                      <div class="col-sm-9">
+                          <input type="text" id="village" placeholder="village" class="form-control" formControlName="village">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="District" class="col-sm-3 control-label">District  </label>
+                    <div class="col-sm-9">
+                        <input type="text" id="District" placeholder="District" class="form-control" formControlName="District">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                          <label for="city" class="col-sm-3 control-label">city* </label>
+                      <div class="col-sm-9">
+                          <input type="text" id="city" placeholder="city" class="form-control"formControlName="city">
+                      </div>
+                  </div>
+                   <div class="form-group">
+                          <label for="state" class="col-sm-3 control-label">state* </label>
+                      <div class="col-sm-9">
+                          <input type="text" id="state" placeholder="state" class="form-control"formControlName="state">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="Country" class="col-sm-3 control-label">Country* </label>
+                  <div class="col-sm-9">
+                      <input type="text" id="Country" placeholder="Country" class="form-control"formControlName="Country">
+                  </div>
+              </div>
+              <br>
+                  <button type="submit" class="btn btn-primary btn-block">Register</button>
+              </form> <!-- /form -->
+          </div> <!-- ./container -->
+         
+          </div>
+          </div>
+         

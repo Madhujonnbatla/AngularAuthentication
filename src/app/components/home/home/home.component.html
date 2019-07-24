@@ -1,0 +1,57 @@
+<div id="image">
+  <div id="a">
+<nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+          <a class="navbar-brand" routerLink="/home">Contraption</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li ><a routerLink="/home">Tickets</a></li>
+          <li><a routerLink="/planttable">Plants </a></li>
+          <li><a routerLink="/ticket">AddTicket </a></li>
+          <li><a routerLink="/engineer">Engineers </a></li>
+          <li><a routerLink="/machine">Machines </a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a (click)="Logout()"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+          </ul>
+          </div>
+          </div>
+        </nav>
+        <div class="row" *ngIf="userClaims">
+          <div class="col s12 m7">
+            <div class="card-content">
+              <span>UserName:{{userClaims.UserName}}</span>
+              <br>
+              <span>Email:{{userClaims.Email}}</span>
+              <br>
+              <span>Name:{{userClaims.FristName}}{{userClaims.LastName}}</span>
+              <br>
+              <span>Loggedon:{{userClaims.LoggedOn}}</span>
+
+            </div>
+          </div>
+        </div>
+       <form *ngFor="let p of Ticket">
+         <div class="cards" id="grow">
+           <div class="card-body">
+             <h3 class="card-title">{{p.Subject}}</h3>
+             <p>{{p.Email}}</p>
+             <p>{{p.PlantName}}</p>
+           </div>
+         </div>
+       </form>
+          
+        </div>
+        </div>
+            
+        
+    
+        

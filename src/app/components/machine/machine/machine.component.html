@@ -1,0 +1,68 @@
+<div id="image">
+    <div id="a">
+            <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>                        
+                            </button>
+                        <a class="navbar-brand" routerLink="/home">Contraption</a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                      <ul class="nav navbar-nav">
+                        <li ><a routerLink="/home">Tickets</a></li>
+                        <li><a routerLink="/planttable">Plants </a></li>
+                        <li><a routerLink="/ticket">AddTicket </a></li>
+                        <li><a routerLink="/engineer">Engineers </a></li>
+                        <li><a routerLink="/machine">Machines </a></li>
+              
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a (click)="Logout()"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+                        </ul>
+                        </div>
+                        </div>
+                      </nav>
+                  
+<div class="container"  style="padding: 100px;">
+  <form class="form-horizontal" role="form" align="center" (ngSubmit)="Add()" [formGroup]="Machine">
+      <h2 align="center"> Machine Registration</h2>
+      <div class="form-group">
+          <label for="MachineId" class="col-sm-3 control-label">MachineId</label>
+          <div class="col-sm-9">
+              <input type="text" id="MachineId" placeholder="MachineId" class="form-control" autofocus formControlName="MachineId">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="MachineName" class="col-sm-3 control-label">MachineName</label>
+          <div class="col-sm-9">
+              <input type="text" id="MachineName" placeholder=" MachineName" class="form-control" autofocus formControlName="MachineName">
+          </div>
+      </div>
+     
+      <div class="form-group">
+          <label for="MachineLocation" class="col-sm-3 control-label">MachineLocation</label>
+          <div class="col-sm-9">
+              <input type="text" id="MachineLocation" placeholder="Location" class="form-control" formControlName="MachineLocation">
+          </div>
+      </div>
+     
+     
+      <div class="form-group">
+          <label for="Machinemodel" class="col-sm-3 control-label">machinemodel  </label>
+          <div class="col-sm-9">
+              <input type="text" id="Machinemodel" placeholder="Model" class="form-control" formControlName="Machinemodel">
+          </div>
+      </div>
+     
+  <br>
+      <button type="submit" class="btn btn-primary ">Register</button>
+  </form> <!-- /form -->
+</div> <!-- ./container -->
+
+
+          </div>
+          </div>
+         
